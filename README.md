@@ -1,6 +1,14 @@
 ## PDDL4J library
 [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.45971.svg)](http://dx.doi.org/10.5281/zenodo.45971)
 
+The command to speedup the build
+
+```./gradlew build -x test --stacktrace```
+
+Used the following command in order to use the FF planner
+
+```java -jar build/libs/pddl4j-3.8.3.jar -p 1 -o src/domain/domain1.pddl -f src/problem/p1.pddl```
+
 ### 1. Contact
 
 - Damien Pellier (damien.pellier@imag.fr)
