@@ -298,6 +298,9 @@ public class StateSpacePlannerFactory implements Serializable {
                     if (heuristic == 0) {
                         arguments.put(AbstractStateSpacePlanner.HEURISTIC,
                             Heuristic.Type.FAST_FORWARD);
+                        StringBuilder strb = new StringBuilder();
+                        strb.append("using FF");
+                        LOGGER.trace(strb);
                     } else if (heuristic == 1) {
                         arguments.put(AbstractStateSpacePlanner.HEURISTIC,
                             Heuristic.Type.SUM);
